@@ -18,13 +18,9 @@ print("WELCOME TO ICE CUBE'S STREET CRAPS.")
 while True:
     try:
         answer = (input("Ready to shake 'em up shake 'em? Type Roll: "))
-        answer = answer.upper() or answer.lower()
-        #print ("")
-       
-                
-        if answer == 'ROLL':
-            break
-        elif answer == "roll":
+        aStrip = answer.strip()
+        au = aStrip.upper() or aStrip.lower()
+        if au == "roll":
             break
         else:
             print ("Please type Roll")
